@@ -1,0 +1,16 @@
+{
+  "name": "learn-terraform",
+  "version": "1.0.0",
+  "scripts": {
+    "iac:plan": "cd .iac && terraform plan",
+    "iac:destroy": "cd .iac && terraform destroy",
+    "iac:apply": "cd .iac && terraform apply",
+    "iac:validate": "cd .iac && terraform validate",
+    "git:push": "git push origin $(git branch --show-current)",
+    "git:noedit": "git commit --amend --no-edit"
+  },
+  "description": "A project created to learn IaC with terraform",
+  "main": "index.js",
+  "author": "Leonel Meque <leomeque@gmail.com>",
+  "license": "MIT"
+}
