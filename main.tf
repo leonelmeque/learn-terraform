@@ -6,7 +6,7 @@ terraform {
     }
   }
 
-  required_version = ">= 0.14.9"
+  required_version = ">= 1.1.0"
 }
 
 provider "aws" {
@@ -15,10 +15,10 @@ provider "aws" {
 }
 
 resource "aws_instance" "app_server" {
-  ami                    = "ami-830c94e3"
+  ami                    = "ami-08d70e59c07c61a3a"
   instance_type          = "t2.micro"
-  vpc_security_group_ids = ["sg-0077"]
-  subnet_id              = "subnet-923a"
+#   vpc_security_group_ids = ["sg-0077"]
+#   subnet_id              = "subnet-923a"
 
   tags = {
     Name = "ExampleAppServerInstance"
